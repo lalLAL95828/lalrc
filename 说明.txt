@@ -30,3 +30,5 @@ npx -p @storybook/cli sb init
 
 //npm run lint //eslint检查
 
+//husky 是一款push之前需要进行操作的插件
+
