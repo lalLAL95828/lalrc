@@ -33,3 +33,7 @@ npx -p @storybook/cli sb init
 //husky 是一款push之前需要进行操作的插件
 //安装husky之后，就不允许删除.git文件夹，否则钩子会失效
 
+//https://travis-ci.com/  CI/cd工具
+
+//https://lalLaL95828.github.io/lalrc
+
