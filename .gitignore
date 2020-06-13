@@ -3,8 +3,6 @@
 # dependencies
 /node_modules
 /dist
-/.stodybook
-/说明.txt
 /.pnp
 .pnp.js
 

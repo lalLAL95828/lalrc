@@ -1,0 +1,30 @@
+npx create-react-app appName --typescript
+
+
+#使用mdi的图标，结合react
+//下载@mdi/js
+npm i @mdi/js
+//下载@mdi/react
+npm install @mdi/react
+
+//安装stotybook
+npx -p @storybook/cli sb init
+//npm i -D @storybook/addon-info
+//npm install --save @types/storybook__addon-info
+
+//react-docgen 组件的详细信息（文档生成器）
+//npm install --save-dev react-docgen-typescript-loader
+
+//npm adduser 登录
+//npm whoami 检测本地登录者
+//npm config ls 查看npm配置
+
+//npm publish 发布包
+
+//travis CI  ci/cd工具
+
+//githubPages 存放静态文件
+
+
+//npm i husky --save-dev //git操作前的操作
+
