@@ -31,4 +31,5 @@ npx -p @storybook/cli sb init
 //npm run lint //eslint检查
 
 //husky 是一款push之前需要进行操作的插件
+//安装husky之后，就不允许删除.git文件夹，否则钩子会失效
 
