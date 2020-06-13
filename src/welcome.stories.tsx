@@ -13,7 +13,7 @@ storiesOf("welcome page",module)
             npm install vikingship --save
           </code>
           <h3>文档链接</h3>
-          <a href="https://lalLaL95828.github.io/lalrc" target="_self">lalrc文档</a>
+          <a href="javascript;" >lalrc文档</a>
           <h3>git地址</h3>
           <a href="https://github.com/lalLAL95828/lalrc" target="_blank" rel="noopener noreferrer">项目库</a>
         </>
