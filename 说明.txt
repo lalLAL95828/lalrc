@@ -28,3 +28,5 @@ npx -p @storybook/cli sb init
 
 //npm i husky --save-dev //git操作前的操作
 
+//npm run lint //eslint检查
+
