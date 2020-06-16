@@ -1,2 +1,18 @@
+//全局变量
+@import "variables";
+
+//全局样式配置
+@import "reboot";
+
+//mixin
+@import "mixin";
+
 // icon样式
 @import "../components/Icon/style";
+
+
+//datePicker
+@import "../components/DatePicker/style";
+
+//button
+@import "../components/Button/style"

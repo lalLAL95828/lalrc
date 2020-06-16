@@ -10,8 +10,9 @@ storiesOf("welcome page",module)
           <p>组件不多，但做一个，精一个。组件会随着时间逐渐更新和增加。因为这是款React组件，所以暂时只能用于React项目。</p>
           <h3>安装</h3>
           <code>
-            npm install vikingship --save
+            npm install lalrc --save
           </code>
+          
           <h3>git地址</h3>
           <a href="https://github.com/lalLAL95828/lalrc" target="_blank" rel="noopener noreferrer">项目库</a>
         </>

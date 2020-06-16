@@ -1,2 +1,2 @@
 import MdiIcon from './icon'
-export default MdiIcon
+export default MdiIcon;
