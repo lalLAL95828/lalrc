@@ -5,14 +5,11 @@ import classNames from "classnames"
 export interface DatePickerProps {
 
 }
-
 export const DatePicker:FC<DatePickerProps> = (props)=>{
-    var tableClassNames = classNames("l-datePicker-table")
-
-
+    // var tableClassNames = classNames("l-datePicker-table")
     return (
         <>
-            <div>
+           {/*  <div>
                 <div></div>
                 <div>
                     <div>
@@ -54,7 +51,7 @@ export const DatePicker:FC<DatePickerProps> = (props)=>{
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

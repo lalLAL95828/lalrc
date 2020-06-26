@@ -4,6 +4,9 @@
 //全局样式配置
 @import "reboot";
 
+//自定样式
+@import "common";
+
 //mixin
 @import "mixin";
 
@@ -15,4 +18,7 @@
 @import "../components/DatePicker/style";
 
 //button
-@import "../components/Button/style"
+@import "../components/Button/style";
+
+//ripple
+@import "../components/Ripple/style";

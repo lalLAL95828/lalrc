@@ -1,3 +1,4 @@
-export {default as Y_Icon} from './components/Icon';
-export {default as Y_DatePicker} from './components/DatePicker';
-export {default as Y_Button} from './components/Button';
+export {default as LALIcon} from './components/Icon';
+export {default as LALDatePicker} from './components/DatePicker';
+export {default as LALButton} from './components/Button';
+export {default as LALRipple} from './components/Ripple';

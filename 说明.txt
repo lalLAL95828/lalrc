@@ -37,3 +37,7 @@ npx -p @storybook/cli sb init
 
 //https://lalLaL95828.github.io/lalrc
 
+
+//http://www.jq22.com/jquery-info819  animate.css jquery版本
+//https://animate.style/   animate.css npm版本
+

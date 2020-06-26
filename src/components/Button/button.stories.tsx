@@ -1,41 +1,49 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button,{ButtonSize,Buttontype} from './button'
+import {default as LALButton,ButtonSize,Buttontype} from './button'
+import { mdiAccountAlert,mdiAccountBox } from '@mdi/js'
+import MdiIcon from '../Icon/icon';
 
 
 const defaultButton = () => (
-    <Button onClick={action('clicked')}>默认按钮</Button>
+    <LALButton onClick={action('clicked')}>默认按钮</LALButton>
 )
+
+/* const buttonWithSize = ()=>{
+    return (
+        <div>
+            <LALButton size={ButtonSize.Large}>large buttom</LALButton>
+            <LALButton size={ButtonSize.Small}>small buttom</LALButton>
+        </div>
+    )
+} */
 
 const buttonWithSize = ()=>(
-    <>
-        <Button size={ButtonSize.Large}>large buttom</Button>
-        <Button size={ButtonSize.Small}>small buttom</Button>
-    </>
-)
+    <div>
+        <LALButton size={ButtonSize.Large}>large buttom</LALButton>
+        <LALButton size={ButtonSize.Small}>small buttom</LALButton>
+    </div>
+);
 
 const buttonWithType = ()=>(
-    <>
-        <Button btnType = {Buttontype.Primary}>primary button</Button>
-        <Button btnType = {Buttontype.Danger}>danger button</Button>
-        <Button btnType = {Buttontype.Link} href="www.baidu.com">Link button</Button>
-    </>
-)
+    <div>
+        <LALButton btnType = {Buttontype.Primary}>primary button</LALButton>
+        <LALButton btnType = {Buttontype.Danger}>danger button</LALButton>
+        <LALButton btnType = {Buttontype.Link} href="www.baidu.com">Link button</LALButton>
+    </div>
+);
+const buttonWithFab = ()=>(
+    <div>
+        <LALButton fab size={ButtonSize.Large} elevation={10} >
+            <MdiIcon path={mdiAccountAlert} size="1.5rem" color="red"/>   
+        </LALButton>
+        <LALButton fab size={ButtonSize.Small} color="pink" width="80px"><MdiIcon path={mdiAccountBox} size="1.2rem" color="blue" /></LALButton>
+    </div>
+);
 
 storiesOf('按钮组件',module)
-// .addParameters({
-//     info:{
-//         text:`
-//         this is a very nice componet
-//         ## import
-//         ~~~js
-//         import Button,{ButtonSize,Buttontype} from './button'
-//         ~~~
-//         `,
-//         inline:true,
-//     }
-// })
 .add('Button',defaultButton)
-.add('不同尺寸button',buttonWithSize)
-.add('不同类型的button',buttonWithType)
+.add('Button of size',buttonWithSize)
+.add('Button of type',buttonWithType)
+.add('IconButton',buttonWithFab)

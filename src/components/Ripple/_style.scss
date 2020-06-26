@@ -1,0 +1,64 @@
+.rip{
+    background-color:gray;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+    top:0;
+    left:0;
+    box-sizing: content-box;
+    // transform: scale(10,10);
+    // transition: all 3s ease-out;
+    display: none;
+    pointer-events: none;
+    // transform: scale(1);
+}
+.rip-group{
+    // box-sizing: content-box;
+    //加1px 是为了解决谷歌浏览器100% 无法占满 button content部分的问题
+    width:calc(100% + 1px);
+    height:calc(100% + 1px);
+    position:absolute;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.ripple-enter{
+    display: block;
+    opacity: 0.5;
+}
+.ripple-active-enter-fast{
+    transform: scale(4.5,4.5);
+    animation: opactityFrames 300ms cubic-bezier(.25,.68,.45,.73);
+    transition: transform 300ms cubic-bezier(.25,.68,.45,.73);
+    transform-origin: center;
+}
+.ripple-active-enter-middle{
+    transform: scale(4.5,4.5);
+    animation: opactityFrames 500ms cubic-bezier(.25,.68,.45,.73);
+    transition: transform 500ms cubic-bezier(.25,.68,.45,.73);
+    transform-origin: center;
+}
+.ripple-active-enter-slow{
+    transform: scale(4.5,4.5);
+    animation: opactityFrames 800ms cubic-bezier(.25,.68,.45,.73);
+    transition: transform 800ms cubic-bezier(.25,.68,.45,.73);
+    transform-origin: center;
+}
+.ripple-done-enter{
+    display: none;
+}
+
+@keyframes opactityFrames{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
